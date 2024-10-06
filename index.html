@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orientation Based Loading</title>
+    <script>
+        function loadPage() {
+            if (window.matchMedia("(orientation: landscape)").matches) {
+                window.location.href = "https://talal-nafees.github.io/-portfolio/"; // Load index2.html in landscape
+            } else {
+                window.location.href = "https://talal-nafees.github.io/portfolio-/"; // Load index1.html in portrait
+            }
+        }
+
+        window.onload = loadPage; // Call loadPage on window load
+    </script>
+</head>
+<body>
+    <!-- Content can go here -->
+</body>
+</html>
